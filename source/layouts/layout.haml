@@ -10,14 +10,17 @@
   <link rel="stylesheet" href="vendor/stylesheets/normalize.css" />
   <link rel="stylesheet" href="vendor/stylesheets/foundation.min.css" />
 
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7685452/716508/css/fonts.css" />
+
   <link rel="stylesheet" href="stylesheets/sss.css" />
 
 %body
-  = partial "partials/header"
-  = yield
-  = partial "partials/hassle"
-  = partial "partials/footer"
-  = partial "partials/tracking"
+  .wrapper
+    = partial "partials/header"
+    = yield
+    = partial "partials/hassle"
+    = partial "partials/footer"
+    = partial "partials/tracking"
 
   <script src="vendor/javascripts/jquery.js"></script>
   <script src="vendor/javascripts/foundation.min.js"></script>

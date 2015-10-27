@@ -1,0 +1,14 @@
+future:
+  - name:         ""
+    date:         ""
+    image:        ""
+    speaker_name: ""
+    speaker_link: ""
+    desc_html:    ""
+past:
+  - name:         ""
+    date:         ""
+    image:        ""
+    speaker_name: ""
+    speaker_link: ""
+    desc_html:    ""

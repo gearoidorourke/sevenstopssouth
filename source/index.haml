@@ -1,18 +1,35 @@
 %section.future-events
   .row
     .large-3.columns
-      %h3 Future
+      %h3 Next event
     .large-9.columns
       %ul.event-listings
-        %li
+        %li.panel.panel--sss.panel--future
           %article.event-listsings__listing
             I am a future event
+
 %section.past-events
   .row
     .large-3.columns
-      %h3 Past
+      %h3 Previous events
+
     .large-9.columns
       %ul.event-listings
-        %li
+        %li.panel.panel--sss
           %article.event-listsings__listing
             I am a past event
+        %li.panel.panel--sss
+          %article.event-listsings__listing
+            I am a past event
+        %li.panel.panel--sss
+          %article.event-listsings__listing
+            I am a past event
+
+
+-# Iterating over data in a yml file
+
+-#   - data.events.future.each do |event|
+-#    %li
+-#      %h1= event["name"]
+-#      %p= event["date"]
+-#      %p= event["desc_html"]
