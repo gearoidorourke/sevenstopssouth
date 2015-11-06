@@ -4,13 +4,17 @@ $mint: #13eff2
 $peach: #ffcc80
 $grey: #b0bec5
 
+
+$base: #f2f2f2
+$text: #323232
+
 html
-  background: #000
-  padding: 8px
+  background: #ffffff
+  padding: 10px
 
 body
   font-family: "Gotham Rounded"
-  background: $peach
+  background: $text
 
 .wrapper
 
@@ -19,40 +23,37 @@ body
 // Typography
 h1, h2, h3, h4, h5, h6
   font-family: "Gotham Rounded"
-  font-weight: 600
-  text-shadow: 4px 4px 0px rgba(255, 255, 255, 1)
+  font-weight: 500
+  color: $text
+
+p
+  line-height: 1.8
+
+a
+  color: $purple
 
 // Site nav
 .site-nav
 
 .site-nav__link
   display: block
-  text-transform: uppercase
-  text-align: center
-  margin: 1em 0
-  padding: 1.25em 1em 1em 1em
-  margin-left: 1em
-  border-radius: 5px
-  color: $purple
-  font-size: 14px
-  line-height: 0.8
-  background: #fff
-  border: 6px solid #000
-  font-weight: 600
-  -webkit-box-shadow: 3px 3px 0px 1px rgba($grey,1)
-  -moz-box-shadow: 3px 3px 0px 1px rgba($grey,1)
-  box-shadow: 3px 3px 0px 1px rgba($grey,1)
+  border-top: 1px solid #fff
+  padding: 20px 0
+  line-height: 1
 
 // Mission Statement
 .mission-statement
   text-transform: uppercase
-  line-height: 1
-  font-size: 3.5em
-
+  line-height: 1.2
+  font-size: 3em
+  border-top: 10px solid #fff
+  padding: 20px 0 20px 0
+  letter-spacing: 1px
 
 // Header
 .site-header
   padding: 5em 0
+  background: $base
 
 // Event listings
 .event-listings
@@ -60,34 +61,64 @@ h1, h2, h3, h4, h5, h6
   padding: 0
   margin: 0
 
+.event-listsings__listing
+  h1
+    text-transform: uppercase
+    line-height: 1.2
+    margin: 20px 0
+
+  h6
+    color: $peach
+
+  .logistics
+    list-style: none
+    padding: 0
+    margin: 0
+    li
+      border-top: 1px solid $base
+      padding: 10px 0
+
 .event-listsings__listing--future
   border-color: $mint
 
 .future-events,
-.past-events
-  padding: 3em 0
+.past-events,
+.supported-by,
+.site-footer
+  padding: 4em 0
   h3
-    text-align: right
+    text-transform: uppercase
+    line-height: 1.1
+    font-size: 1.25em
+    letter-spacing: 1px
 
 .future-events
-  background: #fff
-  border-top: 8px solid #000
-  border-bottom: 8px solid #000
+  background: #ffffff
 
 .past-events
-  border-bottom: 8px solid #000
-  background-image: url(../images/texture_1.gif)
+  background: $base
 
 // Funky panel
 .panel--sss
-  border-radius: 5px
-  border: 6px solid #000000
   background: #ffffff
-  -webkit-box-shadow: 10px 10px 0px 2px rgba($grey,1)
-  -moz-box-shadow: 10px 10px 0px 2px rgba($grey,1)
-  box-shadow: 10px 10px 0px 2px rgba($grey,1)
+  border: none
+  border-top: 10px solid $base
+  padding: 20px 0 0 0
+
+.panel--inverted
+  background: $base
+  border-top: 10px solid #ffffff
+
 
 // Supported by section
 .supported-by
-  background-color: #ccc
-  padding: 3em 0 2em 0
+  background-color: #ffffff
+
+// Footer
+.site-footer
+  background: #333
+  p
+    text-align: center
+    color: $base
+    a
+      color: $mint
